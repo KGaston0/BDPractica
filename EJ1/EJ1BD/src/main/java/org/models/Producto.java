@@ -1,12 +1,21 @@
 package org.models;
 
 import java.time.LocalDateTime;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "productos")
 public class Producto {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(name = "nombre")
     private String nombre;
+    @Column(name = "descripcion")
     private String descripcion;
+    @Column(name = "precio")
     private Double precio;
+    @Column(name = "fecha_creacion")
     private LocalDateTime fecha_creacion;
 
     public Producto(String nombre, String descripcion, Double precio, LocalDateTime fecha_creacion) {

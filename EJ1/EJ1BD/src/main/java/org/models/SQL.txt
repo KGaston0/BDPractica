@@ -6,3 +6,5 @@ CREATE TABLE productos (
     fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 Schema: EJ1
+
+docker run --name nombre -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -v /path/to/mysql/data:/var/lib/mysql mysql
