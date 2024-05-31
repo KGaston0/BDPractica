@@ -1,4 +1,4 @@
-package org.models;
+package Ejemplo1;
 
 import java.time.LocalDateTime;
 import javax.persistence.*;
@@ -17,6 +17,10 @@ public class Producto {
     private Double precio;
     @Column(name = "fecha_creacion")
     private LocalDateTime fecha_creacion;
+
+    public Producto() {
+        // Constructor sin parámetros
+    }
 
     public Producto(String nombre, String descripcion, Double precio, LocalDateTime fecha_creacion) {
         this.nombre = nombre;
@@ -49,7 +53,7 @@ public class Producto {
     }
 
     public void setNombre(String nombre) {
-        nombre = nombre;
+        this.nombre = nombre;
     }
 
     public String getDescripcion() {
@@ -57,7 +61,7 @@ public class Producto {
     }
 
     public void setDescripcion(String descripcion) {
-        descripcion = descripcion;
+        this.descripcion = descripcion;
     }
 
     public Double getPrecio() {
@@ -65,14 +69,14 @@ public class Producto {
     }
 
     public void setPrecio(Double precio) {
-        precio = precio;
+        this.precio = precio;
     }
 
-    public LocalDateTime getFecha_Creacion() {
+    public LocalDateTime getFecha_creacion() {
         return fecha_creacion;
     }
 
-    public void setFecha_Creacion(LocalDateTime fecha_Creacion) {
-        fecha_creacion = fecha_Creacion;
+    public void setFecha_creacion(LocalDateTime fecha_creacion) {
+        this.fecha_creacion = fecha_creacion;
     }
 }

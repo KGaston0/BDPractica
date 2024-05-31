@@ -1,6 +1,6 @@
-package org.models;
+package controllers;
 
-import controllers.ProductoController;
+import Ejemplo1.Producto;
 
 import java.time.LocalDateTime;
 
@@ -10,8 +10,8 @@ import java.time.LocalDateTime;
 public class Main {
     public static void main(String[] args) {
 
-        //Producto producto = new Producto("Producto numero 1","Descripcion producto numero 1",10, LocalDateTime.now());
+        Producto producto = new Producto("Producto numero 1","Descripcion producto numero 1",10.0, LocalDateTime.now());
         ProductoController productoController = new ProductoController();
-        productoController.createUsuario("Producto numero 1","Descripcion producto numero 1",10.0, LocalDateTime.now());
+        productoController.SaveAlumno(producto);
     }
 }
