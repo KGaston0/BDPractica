@@ -1,4 +1,4 @@
-package controllers;
+package Controllers;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -6,7 +6,6 @@ import org.hibernate.cfg.Configuration;
 
 public class HibernateController {
     private static final SessionFactory sessionFactory;
-
     static {
         try {
             Configuration configuration = new Configuration().configure();
@@ -15,7 +14,6 @@ public class HibernateController {
             throw new RuntimeException("Error",e);
         }
     }
-
     public static Session getSession(){
         return sessionFactory.openSession();
     }

@@ -1,10 +1,11 @@
-package Ejemplo1;
+package Models;
 
 import java.time.LocalDateTime;
-import javax.persistence.*;
+//import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "productos")
+@Table(name = "Productos")
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

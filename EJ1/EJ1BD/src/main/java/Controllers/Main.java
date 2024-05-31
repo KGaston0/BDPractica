@@ -1,6 +1,6 @@
-package controllers;
+package Controllers;
 
-import Ejemplo1.Producto;
+import Models.Producto;
 
 import java.time.LocalDateTime;
 

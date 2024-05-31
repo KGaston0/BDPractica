@@ -1,10 +1,6 @@
-package controllers;
-import Ejemplo1.Producto ;
+package Controllers;
+import Models.Producto ;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-
-import java.time.LocalDateTime;
 
 public class ProductoController {
     public void SaveAlumno(Producto producto){
