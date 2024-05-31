@@ -1,4 +1,4 @@
-package Controllers;
+package controllers;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

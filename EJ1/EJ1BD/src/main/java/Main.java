@@ -1,5 +1,5 @@
 import Models.Producto;
-import Controllers.ProductoController;
+import controllers.ProductoController;
 
 import java.time.LocalDateTime;
 

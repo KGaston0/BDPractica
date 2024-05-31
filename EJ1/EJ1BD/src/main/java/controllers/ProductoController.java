@@ -1,4 +1,4 @@
-package Controllers;
+package controllers;
 import Models.Producto ;
 import org.hibernate.Session;
 
